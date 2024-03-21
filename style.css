@@ -31,7 +31,14 @@ h2 {
     margin: 10px;
 }
 
-button {
+.button{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.button button {
     padding: 10px;
     margin: 10px;
     color: white;
@@ -47,4 +54,14 @@ button {
 
 #save {
     background-color: rgb(210, 30, 30);
+}
+
+@media screen and (max-width: 800px) {
+    .button{
+        flex-direction: column;
+    }
+
+    .button button{
+        width: 50%;
+    }
 }
